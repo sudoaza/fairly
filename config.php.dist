@@ -1,0 +1,46 @@
+<?php
+
+define ( 'APP_PATH', realpath ( dirname ( __FILE__ ) . '/app' ) );
+define ( 'LIB_PATH', realpath ( dirname ( __FILE__ ) . '/lib' ) );
+
+define ( 'FLIGHT_PATH', LIB_PATH . '/flight' );
+define ( 'PARIS_PATH', LIB_PATH . '/paris' );
+define ( 'HYBRIDCACHE_PATH', LIB_PATH .'/HybridCache' );
+
+require FLIGHT_PATH.'/Flight.php';
+require PARIS_PATH.'/paris.php';
+require HYBRIDCACHE_PATH.'/lib/init.php';
+
+set_include_path(get_include_path() . PATH_SEPARATOR . FLIGHT_PATH);
+set_include_path(get_include_path() . PATH_SEPARATOR . APP_PATH);
+set_include_path(get_include_path() . PATH_SEPARATOR . APP_PATH . '/model');
+
+Flight::set('flight.lib.path', APP_PATH);
+Flight::set('flight.views.path', APP_PATH.'/view');
+
+ini_set('display_errors',true);
+
+/****  CONFIGURE YOUR DOMAIN AND DB HERE  ****/ 
+
+
+define ( 'DOMAIN', '127.0.0.1:8000' );
+
+ORM::configure('mysql:host=localhost;dbname=fairly');
+ORM::configure('username', 'root');
+ORM::configure('password', '');
+
+
+/****  AND DOWN THE RABBIT HOLE  ****/
+
+## Cache configuration
+
+define ( 'CACHE_ENABLED', true );
+define ( 'CACHE_EXPIRE_TIME', 60*15 ); // 15 minutes
+define ( 'CACHE_EXPIRE_WAITING', 1 ); // 1 second
+
+## Configure Cache meadias:
+
+use Hybrid\Cache as HybridCache;
+use Hybrid\Storages\Disk as DiskSorage;
+
+HybridCache::addStorageMedia(new DiskSorage(dirname(__FILE__).'/cache'));
