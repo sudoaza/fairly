@@ -22,8 +22,8 @@ ini_set('display_errors',true);
 
 /****  CONFIGURE YOUR DOMAIN AND DB HERE  ****/ 
 
-
-define ( 'DOMAIN', '127.0.0.1:8000' );
+define ( 'DOMAIN', '127.0.0.1' );
+define ( 'BASEURL', '127.0.0.1:8000' );
 
 ORM::configure('mysql:host=localhost;dbname=fairly');
 ORM::configure('username', 'root');
