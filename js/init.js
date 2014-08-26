@@ -91,10 +91,24 @@
 })(jQuery);
 
 $(document).ready(function(){
-  // Copy to clipboard
-  var client = new ZeroClipboard();
 
-  $('.copy-button').on('click',function(e){
-    client.setText('test');
-  });
+      var client = new ZeroClipboard( $('.copy_button') );
+
+      client.on( 'ready', function(event) {
+         console.log( 'movie is loaded' );
+
+        client.on( 'copy', function(event) {
+          event.clipboardData.setData('text/plain', event.target.innerHTML);
+        } );
+
+        client.on( 'aftercopy', function(event) {
+          console.log('Copied text to clipboard: ' + event.data['text/plain']);
+        } );
+      } );
+
+      client.on( 'error', function(event) {
+        console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
+        ZeroClipboard.destroy();
+      } );
+
 });
