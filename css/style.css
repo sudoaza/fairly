@@ -1106,3 +1106,5 @@ button.close {
 
 .row.url {border-bottom: 1px solid #DBDBDB; }
 .row.url p { padding-top: 10px; margin-bottom: 10px; }
+
+#url { height: 46px; }
