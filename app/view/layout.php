@@ -54,6 +54,8 @@
 								</header>
 
               <?php if ( $body_class == 'homepage' ) : ?>
+
+
 							<!-- Banner -->
 								<div id="banner">
 									<h2><strong>Fair:</strong> A free URL shortner that protects

@@ -31,7 +31,9 @@
       <p class="long 6u"><?= View::e($url->long_url) ?></p>
       <p class="short 4u" id="short-<?= $url->id ?>"><a href="<?= View::e($url->short_url) ?>"><?= View::e($url->short_url) ?></a></p>
       <p class="copy 2u">
+      <form action="<?= View::makeUri('/auth/forget-me') ?>"
       <button class="copy-button button small" data-clipboard-target="short-<?= $url->id ?>">Copy</button>
+      </form>
       </p>
     </div>
     <?php endforeach ?>

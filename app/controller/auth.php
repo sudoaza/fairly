@@ -30,6 +30,18 @@ class controller_auth {
 		Flight::render('auth_logout',null,'layout');
 	}
 
+  public function forget_me() {
+    auth::regenerate_user_hash();
+
+    if ( auth::isLoggedIn() ) {
+      $auth = model_auth::getCurrent();
+      $auth->user_hash = auth::getUserHash();
+      $auth->save();
+    }
+
+    self::logout();
+  }
+
 	public function change() {
 		Flight::render('auth_change',null,'layout');
 	}
@@ -52,31 +64,4 @@ class controller_auth {
 		}
 	}
 
-	public function pubkey() {
-		$view = Flight::View();
-		$auth = model_auth::getCurrent();
-		$view->set('auth',$auth);
-		Flight::render('auth_pubkey',null,'layout');
-	}
-
-	public function addkey() {
-		$data = Flight::request()->data;
-
-		if ( auth::isLoggedIn() ) {
-			$auth = model_auth::getCurrent();
-
-			if ( $auth->checkPassword($data['password']) ) {
-				$auth->public_key = $data['public_key'];
-				$auth->save();
-				Flight::flash('message',array('type'=>'success','text'=>'Guardaste tu llave con éxito.'));
-
-			} else {
-				Flight::flash('message',array('type'=>'error','text'=>'@#$%^&*!'));
-			}
-
-			Flight::redirect( View::makeUri('/auth/pubkey') );
-		} else {
-			Flight::redirect( View::makeUri('/u/new') );
-		}
-	}
 }
