@@ -24,6 +24,7 @@
 
       </section>
 
+<?= require('projects.php') ?>
 
     </div>
   </div>
