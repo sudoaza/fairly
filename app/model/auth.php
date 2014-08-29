@@ -31,7 +31,7 @@ class auth extends Model {
 		session_set_cookie_params( 15*24*60*60, '/', DOMAIN, false, true );
 		session_start();
     if ( ! isset($_SESSION['user_hash']) ) {
-      $_SESSION['user_hash'] = md5(openssl_random_pseudo_bytes(15));
+      $_SESSION['user_hash'] = hash('sha256',openssl_random_pseudo_bytes(15));
     }
 	}
 

@@ -10,7 +10,7 @@
 		<script src="<?= View::makeUri('/js/jquery.dropotron.min.js') ?>"></script>
 		<script src="<?= View::makeUri('/js/skel.min.js') ?>"></script>
 		<script src="<?= View::makeUri('/js/skel-layers.min.js') ?>"></script>
-    <script src="<?= View::makeUri('/js/ZeroClipboard.js') ?>"></script>
+    <script src="<?= View::makeUri('/js/zeroclipboard.js') ?>"></script>
 		<script src="<?= View::makeUri('/js/init.js') ?>"></script>
 		<noscript>
 			<link rel="stylesheet" href="<?= View::makeUri('/css/skel.css') ?>" />

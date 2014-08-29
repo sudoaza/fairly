@@ -62,6 +62,7 @@
 		font-weight: 400;
 	}
 
+	small { font-size: 0.8em; }
 	a
 	{
 		color: inherit;
@@ -509,7 +510,7 @@
 			.button.icon
 			{
 			}
-			
+
 				.button.icon:before
 				{
 					opacity: 0.5;
@@ -517,7 +518,18 @@
 					position: relative;
 					top: 0.05em;
 				}
-			
+
+			.icon.big { font-size:1.5em; }
+
+			input[type="button"].small,
+			input[type="submit"].small,
+			input[type="reset"].small,
+			.button.small
+			{
+				font-size: 0.7em;
+				padding: 0.7em 1.25em;
+			}
+
 			input[type="button"].medium,
 			input[type="submit"].medium,
 			input[type="reset"].medium,

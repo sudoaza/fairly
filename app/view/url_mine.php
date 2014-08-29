@@ -23,14 +23,26 @@
                     </header>
 
 <?php if ($urls && count($urls)) : ?>
-  <?php foreach ( $urls as $url ) : ?>
-  <div class="url row">
-    <p class="long 6u"><?= View::e($url->long_url) ?></p>
-    <p class="short 4u"><a href="<?= View::e($url->short_url) ?>"><?= View::e($url->short_url) ?></a></p>
-    <p class="copy 2u">
-      <button class="copy-button" data-clipboard-text="<?= View::e($url->short_url) ?>" title="Click to copy me.">Copy URL</button></p> 
+<div class="row">
+
+  <div class="9u">
+    <?php foreach ( $urls as $url ) : ?>
+    <div class="url row">
+      <p class="long 6u"><?= View::e($url->long_url) ?></p>
+      <p class="short 4u" id="short-<?= $url->id ?>"><a href="<?= View::e($url->short_url) ?>"><?= View::e($url->short_url) ?></a></p>
+      <p class="copy 2u">
+      <button class="copy-button button small" data-clipboard-target="short-<?= $url->id ?>">Copy</button>
+      </p>
+    </div>
+    <?php endforeach ?>
   </div>
-  <?php endforeach ?>
+
+  <div class="3u">
+    <button class="button alt big"><i class="icon fa-eye-slash"></i> Forget me</button>
+    <p><i class="icon fa-info"></i> <small> Your links will still work.</small></p>
+  </div>
+
+</div>
 <?php else : ?>
 <p>You have no short URLs. Create one :)</p>
 <?php endif ?>
@@ -47,3 +59,20 @@
 
         </div>
 </div>
+<script>
+
+ZeroClipboard.config( { swfPath: '/js/zeroclipboard.swf', moviePath: '/js/zeroclipboard.swf' } );
+
+var client = new ZeroClipboard($(".copy-button"));
+
+  client.on( "load", function(client) {
+
+    client.on( "complete", function(client, args) {
+      // `this` is the element that was clicked
+      $(this).css("background", "#666");
+      $(this).val("Copied");
+    });
+
+  });
+
+</script>
