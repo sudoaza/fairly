@@ -30,8 +30,8 @@
       <section>
         <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
         <header class="second icon fa-line-chart">
-          <h3>Fair Credit</h3>
-          <p>To promote fair projects</p>
+          <h3>New Wallet</h3>
+          <p>Download the latest wallet and <br />join the fair economy.</p>
         </header>
       </section>
     </div>
