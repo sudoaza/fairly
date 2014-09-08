@@ -30,8 +30,8 @@
       <section>
         <a href="#" class="image featured"><img src="images/wallet.png" alt="Download the new wallet" /></a>
         <header class="second icon fa-line-chart">
-          <h3>Fair Credit</h3>
-          <p>To promote fair projects</p>
+          <h3>New Wallet</h3>
+          <p>Download the latest wallet and <br />join the fair economy.</p>
         </header>
       </section>
     </div>
@@ -39,10 +39,9 @@
   </div>
   <div class="row">
     <div class="12u">
-      <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper 
-      bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod 
-      quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit 
-      amet pulvinar. Nam nec turpis.</p>
+      <p>Fair.coop will be a global-scale open cooperative, self-organized via the internet and 
+	outside the limits and controls of nation-States. It will use Faircoin and its offshoot 
+	faircredit exclusively as its internal currencies.</p>
     </div>
   </div>
 </section>
