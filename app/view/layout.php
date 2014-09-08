@@ -62,7 +62,7 @@
 									<br />
 									your privacy and supports a fair economy.</h2>
 									<p>Want to learn more about FairCoin and the fair economy?</p>
-									<a href="#" class="button big icon fa-check-circle"> Use FairCoin</a>
+									<a href="#" class="button big icon fa-check-circle"> Join FairCoin</a>
 								</div>
               <?php endif ?>
 
