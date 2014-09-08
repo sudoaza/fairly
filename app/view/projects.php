@@ -28,7 +28,7 @@
 
     <div class="4u">
       <section>
-        <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+        <a href="#" class="image featured"><img src="images/wallet.png" alt="Download the new wallet" /></a>
         <header class="second icon fa-line-chart">
           <h3>Fair Credit</h3>
           <p>To promote fair projects</p>
