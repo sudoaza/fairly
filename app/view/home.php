@@ -6,8 +6,7 @@
 
 <div class="inner">
 
-
-          <?= require('projects.php') ?>
+          <?php require('projects.php') ?>
 </div>
 
 </div>

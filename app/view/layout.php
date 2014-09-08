@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>The Fair URL Shortner</title>
+		<title>Fair.to | The Fair URL Shortner</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Privacy aware URL shortner that supports equality and a fair economy." />
 		<meta name="keywords" content="privacy, social networks, url, shortner, shortning" />
@@ -37,7 +37,7 @@
 									<div class="inner">
                     <div class="row">
 										  <!-- Logo -->
-											<h1><a href="<?= View::makeUri('/') ?>" id="logo">Fair</a></h1>
+											<h1><a href="<?= View::makeUri('/') ?>" id="logo">Fair.to</a></h1>
                       <div class="2u">&nbsp;
                       </div>
 											<form action="<?= View::makeUri('/url/shorten') ?>" method="POST" id="url-form" class="10u">
