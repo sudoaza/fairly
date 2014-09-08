@@ -749,7 +749,11 @@
 						opacity: 0.5;
 						bottom: -4px;
 					}
-					
+				
+			.feature1 ul li { line-height: 2em; font-size: 1.5em; }
+
+			#features-list { height: 217px; margin-bottom: 36px; padding-top: 40px; } 
+
 			.box.feature2
 			{
 				text-align: center;
