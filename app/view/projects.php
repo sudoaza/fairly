@@ -18,7 +18,7 @@
 
     <div class="4u">
       <section>
-        <a href="#" class="image featured"><img src="images/faircoop.png" alt="Fair Coop" /></a>
+        <a href="http://fair.coop/" target="_blank" class="image featured"><img src="images/faircoop.png" alt="Fair Coop - The Earth Cooperative" /></a>
         <header class="second icon fa-group">
           <h3>Fair Coop</h3>
           <p>The earth cooperative</p>
@@ -28,8 +28,8 @@
 
     <div class="4u">
       <section>
-        <a href="#" class="image featured"><img src="images/wallet.png" alt="Download the new wallet" /></a>
-        <header class="second icon fa-line-chart">
+        <a href="http://fair-coin.org/" target="_blank" class="image featured"><img src="images/wallet.png" alt="Download the new wallet" /></a>
+        <header class="second icon fa-laptop">
           <h3>New Wallet</h3>
           <p>Download the latest wallet and <br />join the fair economy.</p>
         </header>
@@ -39,9 +39,8 @@
   </div>
   <div class="row">
     <div class="12u">
-      <p>Fair.coop will be a global-scale open cooperative, self-organized via the internet and 
-	outside the limits and controls of nation-States. It will use Faircoin and its offshoot 
-	faircredit exclusively as its internal currencies.</p>
+      <p>Fair.coop will be a global-scale open cooperative, self-organized via
+	the internet and outside the limits and controls of nation-States.</p>
     </div>
   </div>
 </section>
