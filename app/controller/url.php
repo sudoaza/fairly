@@ -10,8 +10,9 @@ class controller_url {
 		$url = model_url::getByShort(View::makeUri($path));
 
 		if ( $url ) {
-			$view->set('url',$url);
-			$template = 'url_get';
+			Flight::redirect($url->long_url);
+			//$view->set('url',$url->url);
+			//$template = 'url_get';
 		} else {
 			$view->set('short_url', View::makeUri($path));
 			Flight::Response()->status(404);
