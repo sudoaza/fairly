@@ -66,7 +66,7 @@ class controller_url {
 
 		} else {
 
-      Flight::flash('message',array('type'=>'error','text'=>'Invalid URL'));
+      Flight::flash('message',array('type'=>'danger','text'=>'Invalid URL'));
 
       if ( Flight::request()->ajax ) {
 			  Flight::Response()->status(400);
