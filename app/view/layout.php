@@ -28,6 +28,9 @@
 -->
 		<!-- Header Wrapper -->
 			<div id="header-wrapper">
+
+				<nav id="top-nav"><a href="<?= View::makeUri('/url/mine') ?>">My links</a></nav>
+
 				<div class="container">
 					<div class="row">
 						<div class="12u">
@@ -123,7 +126,7 @@
 								<ul class="menu">
 									<li>
 									<span style="-webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); display: inline-block" class="icon fa-copyright"> </span> 
-									Fair Coop. All rights reversed</li>
+									Faircoin &amp; FairCoop. All rights reversed</li>
 								</ul>
 							</div>
 						</div>

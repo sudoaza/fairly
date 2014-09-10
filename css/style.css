@@ -1126,3 +1126,5 @@ button.close {
 .row.url p { padding-top: 10px; margin-bottom: 10px; }
 
 #url { height: 46px; }
+
+#top-nav { position: absolute; top: 0; right: 0; padding: 4px 8px; background: rgba(0,0,0,0.5); color: #ccc; text-transform: uppercase; font-weight: bold; font-size: 0.8em; }

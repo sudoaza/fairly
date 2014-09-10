@@ -28,7 +28,7 @@
 
     <div class="4u">
       <section>
-        <a href="http://fair-coin.org/" target="_blank" class="image featured"><img src="images/wallet.png" alt="Download the new wallet" /></a>
+        <a href="http://fair-coin.org/#wallet" target="_blank" class="image featured"><img src="images/wallet.png" alt="Download the new wallet" /></a>
         <header class="second icon fa-laptop">
           <h3>New Wallet</h3>
           <p>Download the latest wallet and <br />join the fair economy.</p>
@@ -39,7 +39,7 @@
   </div>
   <div class="row">
     <div class="12u">
-      <p>Fair.coop will be a global-scale open cooperative, self-organized via
+      <p>Fair Coop will be a global-scale open cooperative, self-organized via
 	the internet and outside the limits and controls of nation-States.</p>
     </div>
   </div>
