@@ -45,8 +45,11 @@ class controller_url {
         $url->user_hash = auth::getUserHash();
 
         if ( is_null($short_url) ) {
-          $url->save(); // so we get an id
-          $url->short_url = View::makeUri('/'.e::encode($url->id));
+          do {
+
+            $url->short_url = View::makeUri('/'.e::encode(rand(1,645999999)));
+
+          } while ( ! model_url::validShort($url->short_url) );
         }
 
         $url->save();
