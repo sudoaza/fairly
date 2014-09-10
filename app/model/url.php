@@ -48,12 +48,9 @@ class model_url {
     return true;
   }
 
-  public static function exists($long_url, $short_url) {
-    if ( is_null($short_url) ) {
-      return false;
-    } else {
-      return Model::factory('url')->where(array('long_url'=>$long_url, 'short_url'=>$short_url))->find_one();
-    }
+  public static function exists($long_url, $user_hash) {
+    return Model::factory('url')->where_equal('long_url',$long_url)->
+      where_equal('user_hash',$user_hash)->find_one();
   }
 
 }

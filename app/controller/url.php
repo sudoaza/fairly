@@ -38,12 +38,14 @@ class controller_url {
 		// If we can use this urls
 		if ( model_url::validLong($long_url) && model_url::validShort($short_url)) {
 
-      if ( ! model_url::exists($long_url, $short_url) ) {
+      // If it isn't a custom short and we dont already have one
+      if ( ! ( is_null($short_url) && model_url::exists($long_url, auth::getUserHash()) ) ) {
         $url = Model::factory('url')->create();
         $url->long_url = trim($long_url);
         $url->short_url = trim($short_url);
         $url->user_hash = auth::getUserHash();
 
+        // If not custom short get me a valid short
         if ( is_null($short_url) ) {
           do {
 
@@ -55,6 +57,9 @@ class controller_url {
         $url->save();
 
         Flight::flash('message',array('type'=>'success','text'=>'URL saved'));
+
+      } else {
+        Flight::flash('message',array('type'=>'info','text'=>'URL already saved'));
       }
 
 			Flight::redirect('/url/mine');
