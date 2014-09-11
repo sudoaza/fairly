@@ -56,7 +56,23 @@ class Request {
         else {
             $this->query = self::parseQuery($this->url);
         }
+
+	$this->secure = self::isSecure();
     }
+
+	public static function isSecure() {
+
+    		if($_SERVER['https'] == 1) /* Apache */ {
+        		return TRUE;
+		} elseif ($_SERVER['https'] == 'on') /* IIS */ {
+        		return TRUE;
+    		} elseif ($_SERVER['SERVER_PORT'] == 443) /* others */ {
+        		return TRUE;
+    		} else {
+        		return FALSE; /* just using http */
+    		}		
+	}
+	
 
     /**
      * Parse query parameters from a URL.

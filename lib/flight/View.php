@@ -150,7 +150,7 @@ class View {
     }
 
 	public function makeUri($uri) {
-		$scheme = $_SERVER["HTTPS"] ? 'https' : 'http';
+		$scheme = Flight::request()->secure ? 'https' : 'http';
 		if ( strpos($uri, '/') === 0 ) {
 			return $scheme.'://'.BASEURL.$uri;
 		} else {
