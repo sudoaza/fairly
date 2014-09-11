@@ -156,6 +156,10 @@ class Response {
                     header($field.': '.$value);
                 }
             }
+
+	    if ( Flight::request()->secure ) {
+		header("strict-transport-security: max-age=6000000");
+	    }
         }
 
         exit($this->body);
