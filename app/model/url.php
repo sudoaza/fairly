@@ -53,6 +53,12 @@ class model_url {
       where_equal('user_hash',$user_hash)->find_one();
   }
 
+  public static function fixIfPossible( $url ) {
+    if ( ! model_url::validLong($url) && model_url::validLong('http://'.trim($url)) ) {
+      $url = 'http://'.trim($url);
+    }
+    return trim($url);
+  }
 }
 
 class url extends Model {

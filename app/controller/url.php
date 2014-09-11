@@ -32,7 +32,7 @@ class controller_url {
 	// Create a new short url
 	public function shorten() {
 		$data = Flight::request()->data;
-		$long_url = $data['url'];
+		$long_url = model_url::fixIfPossible($data['url']);
     $short_url = isset($data['short_url']) ? $data['short_url'] : null;
 
 		// If we can use this urls
