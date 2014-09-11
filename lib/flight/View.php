@@ -150,10 +150,11 @@ class View {
     }
 
 	public function makeUri($uri) {
+		$scheme = $_SERVER["HTTPS"] ? 'https' : 'http';
 		if ( strpos($uri, '/') === 0 ) {
-			return 'http://'.BASEURL.$uri;
+			return $scheme.'://'.BASEURL.$uri;
 		} else {
-			return 'http://'.BASEURL.'/'.$uri;
+			return $scheme.'://'.BASEURL.'/'.$uri;
 		}
 	}
 }
