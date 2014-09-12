@@ -5,14 +5,7 @@ use Hybrid\Cache as HybridCache;
 class model_url {
 
   public static function getByShort( $short_url ) {
-
-    $cache = new HybridCache(__METHOD__, $short_url);
-
-    $url = $cache->getCacheOr(function ($cache) USE ($short_url) {
       return Model::factory('url')->where('short_url', $short_url)->find_one();
-    });
-
-		return $url;
 	}
 
   public static function getByLong( $long_url ) {
