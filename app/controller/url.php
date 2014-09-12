@@ -10,6 +10,8 @@ class controller_url {
 		$url = model_url::getByShort(View::makeUri($path));
 
 		if ( $url ) {
+      $url->visits++;
+      $url->save();
 			Flight::redirect($url->long_url);
 			//$view->set('url',$url->url);
 			//$template = 'url_get';
