@@ -18,7 +18,7 @@
 
     <div class="4u">
       <section>
-        <a href="https://bitcointalk.org/index.php?topic=702675.0" target="_blank" class="image featured"><img src="images/faircoop.png" alt="Fair Coop - The Earth Cooperative" /></a>
+        <a href="https://fair.coop/" target="_blank" class="image featured"><img src="images/faircoop.png" alt="Fair Coop - The Earth Cooperative" /></a>
         <header class="second icon fa-group">
           <h3>Fair Coop</h3>
           <p>The earth cooperative</p>

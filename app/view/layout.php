@@ -88,7 +88,7 @@
 									<h2>Learn More</h2>
 									<ul class="divided">
 										<li><a href="http://fair-coin.org">Faircoin</a></li>
-										<li><a href="https://bitcointalk.org/index.php?topic=702675.0">Fair Coop</a></li>
+										<li><a href="https://fair.coop">Fair Coop</a></li>
 									</ul>
 								</section>
 						
@@ -112,6 +112,7 @@
 								<section>
 									<h2>Fair Coop Resources</h2>
 									<ul class="divided">
+										<li><a href="https://fair.coop/">Website</a></li>
 										<li><a href="https://bitcointalk.org/index.php?topic=702675.0">Announcement</a></li>
 										<li><a href="https://twitter.com/Fair_Coop">Twitter</a></li>
 										<li><a href="https://www.facebook.com/thefaircoop">Facebook</a></li>
