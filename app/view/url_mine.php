@@ -29,7 +29,7 @@
     <?php foreach ( $urls as $url ) : ?>
     <div class="url row">
       <p class="long 6u"><?= View::e($url->long_url) ?></p>
-      <p class="short 4u" id="short-<?= $url->id ?>"><a href="<?= View::e($url->short_url) ?>"><?= View::e($url->short_url) ?></a></p>
+      <p class="short 4u" id="short-<?= $url->id ?>"><a target="_blank" href="<?= View::e($url->short_url) ?>"><?= View::e($url->short_url) ?></a></p>
       <p class="copy 2u">
       <button class="copy-button button small" data-clipboard-target="short-<?= $url->id ?>">Copy</button>
       </p>
