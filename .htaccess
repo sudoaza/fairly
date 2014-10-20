@@ -6,13 +6,13 @@ RewriteBase /
 
 # Force SSL
 RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]                                                                                                                                                                 
-# Protect hidden files from being viewed 
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Protect hidden files from being viewed 
 <Files .*>
-	Order Deny,Allow                                                                                                                                         
-        Deny From All                                                                                                                                            
-</Files>                                                                                                                                                         
+	Order Deny,Allow
+        Deny From All
+</Files>
 
 # Upload bigger files
 php_value upload_max_filesize 20M
@@ -26,12 +26,7 @@ php_flag display_errors off
 php_flag display_startup_errors off
 php_value error_reporting -1
 
-# If file exists in the files dir show it
-RewriteRule ^f/(.*)$ files/$1 [QSA,L] 
-                                                                                                                                                                 
-                                                                                                                                                                 
-# Allow any files or directories that exist to be displayed directly                                                                                             
-RewriteCond %{REQUEST_FILENAME} !-f                                                                                                                              
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}/index.php !-f
 RewriteRule ^(.*)$ index.php [QSA,L]
-

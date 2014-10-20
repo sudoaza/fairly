@@ -26,8 +26,8 @@ if (php_sapi_name() == 'cli-server') {
 Flight::route('GET /?$',array('controller_layout','home'));
 
 Flight::route('POST /url/shorten/?$', array('controller_url','shorten'));
-Flight::route('GET /url/mine/?$', array('controller_url','mine'));
-Flight::route('GET /auth/forget\-me/?$', array('controller_auth','forget_me'));
+Flight::route('GET /url/mine/?', array('controller_url','mine'));
+Flight::route('GET /auth/forget\-me/?', array('controller_auth','forget_me'));
 
 Flight::route('GET /@path:[a-z0-9_-]+/?$',array('controller_url','get'));
 
