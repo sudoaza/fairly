@@ -28,7 +28,7 @@
 
     <div class="4u">
       <section>
-        <a href="http://fair-coin.org/#wallet" target="_blank" class="image featured"><img src="images/wallet.png" alt="Download the new wallet" /></a>
+        <a href="https://fair-coin.org/#wallet" target="_blank" class="image featured"><img src="images/wallet.png" alt="Download the new wallet" /></a>
         <header class="second icon fa-laptop">
           <h3>New Wallet</h3>
           <p>Download the latest wallet and <br />join the fair economy.</p>
