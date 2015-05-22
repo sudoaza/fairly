@@ -64,7 +64,7 @@
 									<h2><strong>Fair.to</strong> A free URL shortner that <br />
 									protects your privacy and supports <br />a fair economy.</h2>
 									<p>Want to learn more about FairCoin and the fair economy?</p>
-									<a href="http://fair-coin.org" class="button big icon fa-check-circle"> Join FairCoin</a>
+									<a href="https://fair-coin.org" class="button big icon fa-check-circle"> Join FairCoin</a>
 								</div>
               <?php endif ?>
 
@@ -87,7 +87,7 @@
 								<section>
 									<h2>Learn More</h2>
 									<ul class="divided">
-										<li><a href="http://fair-coin.org">Faircoin</a></li>
+										<li><a href="https://fair-coin.org">Faircoin</a></li>
 										<li><a href="https://fair.coop">Fair Coop</a></li>
 									</ul>
 								</section>
@@ -99,9 +99,9 @@
 								<section>
 									<h2>Faircoin Resources</h2>
 									<ul class="divided">
-										<li><a href="http://fair-coin.org/#exchanges">Exchanges</a></li>
-										<li><a href="http://fair-coin.org/#wallet">Wallet</a></li>
-										<li><a href="http://forum.fair-coin.org">Forum</a></li>
+										<li><a href="https://fair-coin.org/#exchanges">Exchanges</a></li>
+										<li><a href="https://fair-coin.org/#wallet">Wallet</a></li>
+										<li><a href="https://forum.fair-coin.org">Forum</a></li>
 										<li><a href="https://twitter.com/FairCoinTeam">Twitter</a></li>
 									</ul>
 								</section>
